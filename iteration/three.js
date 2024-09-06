@@ -105,7 +105,7 @@ europeCountriesMap.set("Kazakhstan", "KZ");
 europeCountriesMap.set("Kosovo", "XK");
 europeCountriesMap.set("Latvia", "LV");
 europeCountriesMap.set("Liechtenstein", "LI");
-europeanCountriesMap.set("Lithuania", "LT");
+europeCountriesMap.set("Lithuania", "LT");
 europeCountriesMap.set("Luxembourg", "LU");
 europeCountriesMap.set("Malta", "MT");
 europeCountriesMap.set("Moldova", "MD");
