@@ -24,3 +24,4 @@ console.log(counter.getValue());
     console.log(`hello vinuska`)
 })();
 
+(()=>{ console.log(`hello vishakha`)})();
