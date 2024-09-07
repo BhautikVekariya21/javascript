@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lapwing</title>
+</head>
+<body style="background-color: black; color: beige; text-decoration: none;">
+    <ol>
+        <li class="language">JSON</li> <!-- Corrected class closing -->
+    </ol>   
+</body>  
+<script>
+function addlanguage(jeleng) {
+        const li = document.createElement('li'); // Create an <li> element
+        li.innerHTML = `${jeleng}`; // Set the innerHTML to the passed language
+        document.querySelector('.language').parentElement.appendChild(li); // Append the li element
+    }
+
+addlanguage("java");
+addlanguage("python");
+addlanguage("c++");
+  
+function balak(langname) {
+    const li = document.createElement('li'); // Create an <li> element
+    li.appendChild(document.createTextNode(langname)); // Use the variable langname instead of a string
+    document.querySelector(".language").parentElement.appendChild(li); // Append the created <li> element
+}
+
+balak("js");
+balak("sql");
+balak("d");
+
+const forthlanguage = document.querySelector('li:nth-child(4)');
+console.log(forthlanguage); 
+
+const newsli = document.createElement('li');
+newsli.textContent = "A#"; // Set the new text content
+forthlanguage.replaceWith(newsli); // Replace the old 12th <li> element with the new one
+
+const firstlanguage =document.querySelector('li:first-child')
+firstlanguage.outerHTML='<li>ballerina</li>'
+
+const lastlanguage =document.querySelector('li:last-child')
+lastlanguage.remove()
+
+</script>
+
+</html>
