@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anxiety</title>
+    <style>
+        .parent{
+            background-color: black;
+            color:beige;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <!-- this is a comment -->
+
+        <div class="day" id="picric">Monday</div>
+        
+        <div class="day" id="diaphin">Tuesday</div>
+       
+        <div class="day" id="cronil">Wednesday</div>
+        
+        <div class="day" id="vanelin">Thursday</div>
+    </div>
+    <h1>sweeze</h1>
+</body>
+<script>
+    const parent = document.querySelector('.parent');
+    console.log(parent);
+    console.log(parent.children);
+    console.log(parent.children[0]);
+    console.log(parent.children[1]);
+    console.log(parent.children[2]);
+    console.log(parent.children[3]);
+    
+    parent.children[0].style.color="aqua";
+    parent.children[0].style.backgrounColor="yellow";
+    parent.children[1].style.color="greenyellow";
+    parent.children[1].style.backgroundColor="Purple";
+    parent.children[2].style.color="Teal";
+    parent.children[2].style.backgroundColor="pink";
+    parent.children[3].style.color="Lime";
+    parent.children[3].style.backgroundColor="Fuchsia";
+
+    console.log(parent.firstElementChild);
+    console.log(parent.lastElementChild);
+
+    const black = document.querySelector('#picric');
+
+    console.log(black.parentElement);
+    console.log(black.childNodes);
+    console.log(black.children);
+    console.log(black.nextElementSibling);
+    
+    console.log(parent.childNodes);
+    const association = document.createElement('h2');
+    console.log(association);
+
+    association.className = 'sweesishgov';
+
+    association.id = Math.round(Math.random() * 1142 + 1);
+
+    association.setAttribute('title', 'make a better world');
+
+    association.style.backgroundColor = 'azure'; 
+    association.style.padding = '19px';
+    association.style.margin = '88px';
+
+    association.style.border = '13px solid teal'
+
+    const txt = document.createTextNode("Hello, cutie. Welcome to the garden");
+    association.appendChild(txt);
+
+    document.body.appendChild(association);
+
+</script>
+</html>
