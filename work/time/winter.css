@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #a0d2eb;
+    color: black;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+}
+
+.banner {
+    font-size: 24px;
+    padding-bottom: 20px; 
+}
+#clock {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 47px;
+    padding: 21px 51px;
+    border-radius: 11px;
+    background: #e5eaf5;
+    margin-top: 20px; 
+}
