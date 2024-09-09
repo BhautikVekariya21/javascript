@@ -1,0 +1,90 @@
+
+html {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+            width: 300px;
+            max-width: 750px;
+            min-width: 480px;
+            margin: 0 auto;
+            background-color: #E0FFFF;
+            display:flex;
+            text-align: center;
+}
+.lastResult {
+            color: rgb(34, 188, 254);
+            padding: 7px;
+}
+.guesses {
+            color: rgb(34, 188, 254);
+            padding: 7px;
+}
+button {
+            background-color: #141414;
+            color: rgb(34, 188, 254);
+            width: 250px;
+            height: 50px;
+            border-radius: 25px;
+            font-size: 30px;
+            border-style: none;
+            margin-top: 30px;
+            /* margin-left: 50px; */
+}
+#subt {
+            background-color: #161616;
+            color:rgb(34, 188, 254);
+            width: 200px;
+            height: 50px;
+            border-radius: 10px;
+            font-size: 20px;
+            border-style: none;
+            margin-top: 50px;
+            /* margin-left: 75px; */
+}
+#guessField {
+            color:rgb(34, 188, 254);
+            width: 250px;
+            height: 50px;
+            font-size: 30px;
+            border-style: none;
+            margin-top: 25px;
+
+            /* margin-left: 50px; */
+            border: 5px solid #8aecec;
+            text-align: center;
+}
+
+#guess {
+            font-size: 55px;
+            /* margin-left: 90px; */
+            margin-top: 120px;
+            color: #30e130;
+}
+
+.guesses {
+            background-color: #e03ea0;
+}
+
+#wrapper {
+            box-sizing: border-box;
+            text-align: center;
+            width: 450px;
+            height: 550px;
+            background-color: #8ae118;
+            color: #fff;
+            font-size: 25px;
+}
+
+h1 {
+            background-color: #85d5ee;
+            border: 1px dashed #000000;
+            color: #233f518d;
+            text-align: center;
+}
+
+p {
+            font-size: 16px;
+            text-align: center;
+}
+
