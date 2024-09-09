@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>helio</title>
+    <style>
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .canvas {
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        #AliceBlue {
+            background-color: AliceBlue;
+            border: 2px dashed Black;
+        }
+
+        #Azure {
+            background-color: Azure;
+            border: 2px dashed Black;
+        }
+
+        #Cyan {
+            background-color: Cyan;
+            border: 2px dashed Black;
+        }
+
+        #DarkMagenta {
+            background-color: DarkMagenta;
+            border: 2px dashed Black;
+        }
+
+        #DarkSlateGrey {
+            background-color: DarkSlateGrey;
+            border: 2px dashed Black;
+        }
+
+        #DarkTurquoise {
+            background-color: DarkTurquoise;
+            border: 2px dashed Black;
+        }
+
+        #DodgerBlue {
+            background-color: DodgerBlue;
+            border: 2px dashed Black;
+        }
+
+        #GreenYellow {
+            background-color: GreenYellow;
+            border: 2px dashed Black;
+        }
+
+        #HotPink {
+            background-color: HotPink;
+            border: 2px dashed Black;
+        }
+
+        #LightSeaGreen {
+            background-color: LightSeaGreen;
+            border: 2px dashed Black;
+        }
+
+        #LightSkyBlue {
+            background-color: LightSkyBlue;
+            border: 2px dashed Black;
+        }
+
+        #Lime {
+            background-color: Lime;
+            border: 2px dashed Black;
+        }
+
+        #Wheat {
+            background-color: Wheat;
+            border: 2px dashed Black;
+        }
+
+        #Turquoise {
+            background-color: Turquoise;
+            border: 2px dashed Black;
+        }
+
+        #PowderBlue {
+            background-color: PowderBlue;
+            border: 2px dashed Black;
+        }
+
+        #Plum {
+            background-color: Plum;
+            border: 2px dashed Black;
+        }
+
+        #PaleTurquoise {
+            background-color: PaleTurquoise;
+            border: 2px dashed Black;
+        }
+
+        #PaleGoldenRod {
+            background-color: PaleGoldenRod;
+            border: 2px dashed Black;
+        }
+
+        /* Additional colors */
+        #Coral {
+            background-color: Coral;
+            border: 2px dashed Black;
+        }
+
+        #Tomato {
+            background-color: Tomato;
+            border: 2px dashed Black;
+        }
+
+        #Orchid {
+            background-color: Orchid;
+            border: 2px dashed Black;
+        }
+
+        #Salmon {
+            background-color: Salmon;
+            border: 2px dashed Black;
+        }
+
+        #SlateBlue {
+            background-color: SlateBlue;
+            border: 2px dashed Black;
+        }
+
+        #SpringGreen {
+            background-color: SpringGreen;
+            border: 2px dashed Black;
+        }
+
+        #Teal {
+            background-color: Teal;
+            border: 2px dashed Black;
+        }
+
+        #YellowGreen {
+            background-color: YellowGreen;
+            border: 2px dashed Black;
+        }
+
+        #Violet {
+            background-color: Violet;
+            border: 2px dashed Black;
+        }
+
+        #OrangeRed {
+            background-color: OrangeRed;
+            border: 2px dashed Black;
+        }
+
+        #MediumSeaGreen {
+            background-color: MediumSeaGreen;
+            border: 2px dashed Black;
+        }
+
+        #MidnightBlue {
+            background-color: MidnightBlue;
+            border: 2px dashed Black;
+        }
+
+        #RosyBrown {
+            background-color: RosyBrown;
+            border: 2px dashed Black;
+        }
+
+        #SandyBrown {
+            background-color: SandyBrown;
+            border: 2px dashed Black;
+        }
+
+        #SteelBlue {
+            background-color: SteelBlue;
+            border: 2px dashed Black;
+        }
+    </style>
+</head>
+<body>
+    <div class="canvas">
+        <h1>Color switcher</h1>
+
+        <span class="button" id="AliceBlue"></span>
+        <span class="button" id="Azure"></span>
+        <span class="button" id="Cyan"></span>
+        <span class="button" id="DarkMagenta"></span>
+        <span class="button" id="DarkSlateGrey"></span>
+        <span class="button" id="DarkTurquoise"></span>
+        <span class="button" id="DodgerBlue"></span>
+        <span class="button" id="GreenYellow"></span>
+        <span class="button" id="HotPink"></span>
+        <span class="button" id="LightSeaGreen"></span>
+        <span class="button" id="LightSkyBlue"></span>
+        <span class="button" id="Lime"></span>
+        <span class="button" id="Wheat"></span>
+        <span class="button" id="Turquoise"></span>
+        <span class="button" id="PowderBlue"></span>
+        <span class="button" id="Plum"></span>
+        <span class="button" id="PaleTurquoise"></span>
+        <span class="button" id="PaleGoldenRod"></span>
+        <span class="button" id="Coral"></span>
+        <span class="button" id="Tomato"></span>
+        <span class="button" id="Orchid"></span>
+        <span class="button" id="Salmon"></span>
+        <span class="button" id="SlateBlue"></span>
+        <span class="button" id="SpringGreen"></span>
+        <span class="button" id="Teal"></span>
+        <span class="button" id="YellowGreen"></span>
+        <span class="button" id="Violet"></span>
+        <span class="button" id="OrangeRed"></span>
+        <span class="button" id="MediumSeaGreen"></span>
+        <span class="button" id="MidnightBlue"></span>
+        <span class="button" id="RosyBrown"></span>
+        <span class="button" id="SandyBrown"></span>
+        <span class="button" id="SteelBlue"></span>
+
+        <h2>Try clicking on one of the colors above
+        <span>to change the background color of this page!</span>
+        </h2>
+    </div>
+    <script src="code.js"></script>
+</body>
+</html>
