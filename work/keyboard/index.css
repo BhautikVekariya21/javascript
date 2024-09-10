@@ -1,0 +1,28 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #E0FFFF;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(9, 21, 22);
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.color table {
+    border: 1px dashed black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px dashed black;
+}
