@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wooden</title>
+    <style>
+        body {
+            height: 100vh; /* Full viewport height */
+            margin: 0;
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            align-items: center; 
+            font-family: Arial, sans-serif;
+            background-color: #E6E6FA;
+        }
+
+        h1 {
+            margin-bottom: 20px; 
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #FFF0F5;
+            border: 2px dashed black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome, Cutie!</h1>
+    <button id="stop">cutie</button>
+
+    <script>
+        const cutie = () => {
+            console.log('hello cutie');
+        }
+        const button = document.getElementById('stop');
+        button.addEventListener('click', cutie);
+
+        const changetxt = ()=>{
+            document.querySelector('h1').innerHTML='good moening cutie';
+        }
+        const changnme = setTimeout(changetxt,4000);
+        
+        document.querySelector('#stop').addEventListener('click',(e)=>{
+            clearTimeout(changnme);
+            console.log('cutie,you clicked stopeed');
+        })
+    </script>
+</body>
+</html>
