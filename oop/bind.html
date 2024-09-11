@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amino acid</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: #E0FFFF;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(9, 21, 22);
+        }
+        .project {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="project" class="project">
+        <h2>Bind</h2>
+        <button id="button">click here</button>
+    </div>
+    
+    <script>
+        class Animal {
+            constructor() {
+                this.name = "cat";
+                this.breed = "persian cat";
+
+                document.querySelector('button').addEventListener('click', this.handleclick.bind(this));
+            }
+            handleclick() {
+                console.log('button clicked');
+                console.log(`Name: ${this.name}`);
+                console.log(`Breed: ${this.breed}`);
+            }
+        }
+
+        // Initialize the Animal class
+        new Animal();
+    </script>
+</body>
+</html>
