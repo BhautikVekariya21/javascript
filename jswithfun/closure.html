@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+    <style>
+        /* Make body a flex container to center content */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ensure full height for centering */
+            margin: 0;
+            background-color: #E6E6FA; /* Default background color */
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .LightCyan, .PaleTurquoise {
+            background-color: #6befef;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 0 10px;
+            border: 2px dashed black;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="LightCyan">LightCyan</button>
+        <button class="PaleTurquoise">PaleTurquoise</button>
+    </div>
+</body>
+<!-- <script>
+    function animal() {
+        let name = 'cat';
+        function cat() {
+            console.log(name);
+        }
+        cat();
+    }
+    animal();
+
+    document.querySelector('.LightCyan').onclick = () => {
+        document.body.style.backgroundColor = 'LightCyan'; 
+    }
+
+    document.querySelector('.PaleTurquoise').onclick = () => {
+        document.body.style.backgroundColor = 'PaleTurquoise'; 
+    }
+</script> -->
+<script>
+    function handlecolor(color){
+        return function(){
+            document.body.style.backgroundColor = `${color}`;
+        }
+    }
+    document.querySelector('.PaleTurquoise').onclick = handlecolor("PaleTurquoise")
+    document.querySelector('.LightCyan').onclick = handlecolor("LightCyan")
+</script>
+</html>
