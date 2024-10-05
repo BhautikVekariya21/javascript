@@ -11,39 +11,45 @@
     </ol>   
 </body>  
 <script>
-function addlanguage(jeleng) {
+    // Function to add a new language to the list
+    function addlanguage(jeleng) {
         const li = document.createElement('li'); // Create an <li> element
         li.innerHTML = `${jeleng}`; // Set the innerHTML to the passed language
         document.querySelector('.language').parentElement.appendChild(li); // Append the li element
     }
 
-addlanguage("java");
-addlanguage("python");
-addlanguage("c++");
+    // Adding languages using the addlanguage function
+    addlanguage("Java");
+    addlanguage("Python");
+    addlanguage("C++");
   
-function balak(langname) {
-    const li = document.createElement('li'); // Create an <li> element
-    li.appendChild(document.createTextNode(langname)); // Use the variable langname instead of a string
-    document.querySelector(".language").parentElement.appendChild(li); // Append the created <li> element
-}
+    // Function to add a new language using text node
+    function balak(langname) {
+        const li = document.createElement('li'); // Create an <li> element
+        li.appendChild(document.createTextNode(langname)); // Set the text of the <li>
+        document.querySelector(".language").parentElement.appendChild(li); // Append the <li> to the list
+    }
 
-balak("js");
-balak("sql");
-balak("d");
+    // Adding more languages using the balak function
+    balak("JS");
+    balak("SQL");
+    balak("D");
 
-const forthlanguage = document.querySelector('li:nth-child(4)');
-console.log(forthlanguage); 
+    // Selecting the fourth language
+    const forthlanguage = document.querySelector('li:nth-child(4)');
+    console.log(forthlanguage); 
 
-const newsli = document.createElement('li');
-newsli.textContent = "A#"; // Set the new text content
-forthlanguage.replaceWith(newsli); // Replace the old 12th <li> element with the new one
+    // Replacing the fourth language with "A#"
+    const newsli = document.createElement('li');
+    newsli.textContent = "A#"; // Set the new text content
+    forthlanguage.replaceWith(newsli); // Replace the old <li> with the new one
 
-const firstlanguage =document.querySelector('li:first-child')
-firstlanguage.outerHTML='<li>ballerina</li>'
+    // Changing the first language to "Ballerina"
+    const firstlanguage = document.querySelector('li:first-child');
+    firstlanguage.outerHTML = '<li>Ballerina</li>';
 
-const lastlanguage =document.querySelector('li:last-child')
-lastlanguage.remove()
-
+    // Removing the last language
+    const lastlanguage = document.querySelector('li:last-child');
+    lastlanguage.remove();
 </script>
-
 </html>
