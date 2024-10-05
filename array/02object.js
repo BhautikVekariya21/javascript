@@ -1,7 +1,7 @@
 // Creating an empty object 'zucchini' and dynamically adding properties
 const zucchini = {};
 zucchini.id = "zucch11";            // Adding an ID for the zucchini
-zucchini.name = "yellow zucchinni"; // Adding a name for the zucchini
+zucchini.name = "yellow zucchinni"; // Adding a name for the zucchini 
 zucchini.contain = true;            // Adding a boolean property indicating if it contains something (e.g., seeds)
 
 // Uncomment to log the 'zucchini' object to the console
