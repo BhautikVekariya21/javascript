@@ -2,7 +2,7 @@
 const fruit = ["apple", "berries", "watermelon", "guava", "pineapple", "strawberry", "custardapple"];
 const dryfruits = ["Almonds", "Cashews", "Walnuts", "Pistachios", "Hazelnuts", "Brazil nuts", "Macadamia nuts"];
 const num = new Array(1, 11, 121, 1123, 142, 214, 165, 212, 421);
-
+ 
 // Printing out the 'fruit' and 'dryfruits' arrays
 console.log(`Fruits: ${fruit}`);  // Outputs the 'fruit' array as a string
 console.log(`Dry Fruits: ${dryfruits}`);  // Outputs the 'dryfruits' array as a string
