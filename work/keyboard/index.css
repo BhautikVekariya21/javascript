@@ -1,28 +1,32 @@
+/* Set the default font family for the entire body */
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #E0FFFF;
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:rgb(9, 21, 22);
+    background-color: #E0FFFF; /* Light cyan background color */
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    color: rgb(9, 21, 22); /* Dark text color */
 }
 
+/* Styles for the project container */
 .project {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    text-align: center; /* Center text within the container */
 }
 
+/* Styles for the key press result table */
 .color table {
-    border: 1px dashed black;
-    border-collapse: collapse;
-    padding: 10px;
+    border: 1px dashed black; /* Dashed border around the table */
+    border-collapse: collapse; /* Collapse borders to avoid double borders */
+    padding: 10px; /* Padding inside the table */
 }
 
+/* Styles for table header and cells */
 th, td {
-    padding: 10px;
-    border: 1px dashed black;
+    padding: 10px; /* Padding for table header and cell */
+    border: 1px dashed black; /* Dashed border for table header and cells */
 }
