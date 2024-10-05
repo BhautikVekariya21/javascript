@@ -5,64 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Closure</title>
     <style>
-        /* Make body a flex container to center content */
+        /* Center content using Flexbox */
         body {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* Ensure full height for centering */
-            margin: 0;
+            height: 100vh; /* Full height to ensure vertical centering */
+            margin: 0; /* Remove default margin */
             background-color: #E6E6FA; /* Default background color */
         }
 
+        /* Container for the buttons, centered */
         .button-container {
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
+        /* Styling for both buttons */
         .LightCyan, .PaleTurquoise {
-            background-color: #6befef;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            margin: 0 10px;
-            border: 2px dashed black;
+            background-color: #6befef; /* Set the default background color */
+            border: none; /* Remove the default border */
+            padding: 10px 20px; /* Add padding to the buttons */
+            font-size: 16px; /* Set font size */
+            cursor: pointer; /* Change the cursor to a pointer on hover */
+            margin: 0 10px; /* Add spacing between buttons */
+            border: 2px dashed black; /* Dashed black border for buttons */
+            transition: background-color 0.3s ease; /* Smooth background color transition */
+        }
+
+        /* Optional hover effect to improve UX */
+        .LightCyan:hover, .PaleTurquoise:hover {
+            background-color: #5ae1e1; /* Slightly darker color on hover */
         }
     </style>
 </head>
 <body>
+    <!-- Container for the buttons -->
     <div class="button-container">
         <button class="LightCyan">LightCyan</button>
         <button class="PaleTurquoise">PaleTurquoise</button>
     </div>
 </body>
-<!-- <script>
-    function animal() {
-        let name = 'cat';
-        function cat() {
-            console.log(name);
-        }
-        cat();
-    }
-    animal();
 
-    document.querySelector('.LightCyan').onclick = () => {
-        document.body.style.backgroundColor = 'LightCyan'; 
-    }
-
-    document.querySelector('.PaleTurquoise').onclick = () => {
-        document.body.style.backgroundColor = 'PaleTurquoise'; 
-    }
-</script> -->
 <script>
-    function handlecolor(color){
-        return function(){
-            document.body.style.backgroundColor = `${color}`;
+    /* 
+        Function that returns another function (closure).
+        The returned function changes the background color when the button is clicked.
+        This approach avoids repeating code for each button.
+    */
+    function handlecolor(color) {
+        return function() {
+            document.body.style.backgroundColor = `${color}`; // Set the background color to the passed color
         }
     }
-    document.querySelector('.PaleTurquoise').onclick = handlecolor("PaleTurquoise")
-    document.querySelector('.LightCyan').onclick = handlecolor("LightCyan")
+
+    // Add event listeners to the buttons using the closure function
+    document.querySelector('.PaleTurquoise').onclick = handlecolor("PaleTurquoise"); // Set background to PaleTurquoise
+    document.querySelector('.LightCyan').onclick = handlecolor("LightCyan"); // Set background to LightCyan
 </script>
 </html>
+
+<!-- Changes and Explanations:
+CSS Improvements:
+
+Flexbox for centering: The body is set as a flex container, which centers the .button-container both horizontally and vertically.
+Button Hover Effect: Added a hover effect for buttons to slightly darken their background color, improving user experience.
+JavaScript:
+
+Closure Function: The handlecolor function creates a closure that takes the color as a parameter and returns a function to set the backgroundColor. This simplifies event handling and reduces repetitive code.
+Commenting:
+
+Added detailed comments in both the CSS and JavaScript sections to explain the purpose of each part of the code. -->
