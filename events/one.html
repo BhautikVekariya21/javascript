@@ -3,57 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>amazing</title>
+    <title>Amazing</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h2>Amazing</h2>
     <div>
         <ul id="image">
-            <li><img height="200px" width="200px" id="cowbaby" src="./arbendra-pratap-7Xqa48eV6ME-unsplash.jpg" alt=""></li>
-            <li><img height="200px" width="200px" id="night" src="./benjamin-voros-U-Kty6HxcQc-unsplash.jpg" alt=""></li>
-            <li><img height="200px" width="200px" id="farm" src="./gozha-net-xDrxJCdedcI-unsplash.jpg" alt=""></li>
-            <li><img height="200px" width="200px" id="deer" src="./john-royle-NIyqowE5aDE-unsplash.jpg" alt=""></li>
-            <li><img height="200px" width="200px" id="mountain" src="./kalen-emsley-Bkci_8qcdvQ-unsplash.jpg" alt=""></li>
-            <li><img height="200px" width="200px" id="sleep" src="./kinga-howard-kqDEH7M2tGk-unsplash.jpg" alt=""></li>
-            <li><img height="200px" width="200px" id="forest" src="./lukasz-szmigiel-2ShvY8Lf6l0-unsplash.jpg" alt=""></li>
-            <li><img height="200px" width="200px" id="baby" src="./samsung-memory-seUxMX-DhAQ-unsplash.jpg" alt=""></li>
-            <li><a style="color: aliceblue;" href="https://amazon.com" id="amazon">amazon</a></li>
+            <li><img height="200px" width="200px" id="cowbaby" src="./arbendra-pratap-7Xqa48eV6ME-unsplash.jpg" alt="Cow Baby"></li>
+            <li><img height="200px" width="200px" id="night" src="./benjamin-voros-U-Kty6HxcQc-unsplash.jpg" alt="Night"></li>
+            <li><img height="200px" width="200px" id="farm" src="./gozha-net-xDrxJCdedcI-unsplash.jpg" alt="Farm"></li>
+            <li><img height="200px" width="200px" id="deer" src="./john-royle-NIyqowE5aDE-unsplash.jpg" alt="Deer"></li>
+            <li><img height="200px" width="200px" id="mountain" src="./kalen-emsley-Bkci_8qcdvQ-unsplash.jpg" alt="Mountain"></li>
+            <li><img height="200px" width="200px" id="sleep" src="./kinga-howard-kqDEH7M2tGk-unsplash.jpg" alt="Sleep"></li>
+            <li><img height="200px" width="200px" id="forest" src="./lukasz-szmigiel-2ShvY8Lf6l0-unsplash.jpg" alt="Forest"></li>
+            <li><img height="200px" width="200px" id="baby" src="./samsung-memory-seUxMX-DhAQ-unsplash.jpg" alt="Baby"></li>
+            <li><a style="color: aliceblue;" href="https://amazon.com" id="amazon">Amazon</a></li>
         </ul>
     </div>
 </body>
 <script>
-    // document.getElementById('image').addEventListener('click',function(e){
-    //     console.log('clicked inside the ul');
-    // },false)
-    // document.getElementById('cowbaby').addEventListener('click',function(e){
-    //     console.log('cowbaby');
-    // },false)
-    // document.getElementById('image').addEventListener('click',function(e){
-    //     console.log('clicked inside the ul');
-    // },true)
-    // document.getElementById('night').addEventListener('click',function(e){
-    //     console.log('night');
-    // },true)
-    // document.getElementById('farm').addEventListener('click',function(e){
-    //     console.log('farm');
-    //     e.stopPropagation();
-    // },true)
-    // document.getElementById('amazon').addEventListener('click',function(e){
-    //     e.preventDefault();
-    //     e.stopPropagation();
-    //     console.log('amazon');  
-    // },true)
-
-    document.querySelector('#image').addEventListener('click',(e)=>{
-        console.log(e.target);
-        console.log(e.target.tagName);
-        if(e.target.tagName==='IMG'){
-            console.log(e.target.id);
-            let removeit = e.target.parentNode;
-            // removeit.remove();   
-            removeit.parentNode.removeChild(removeit); 
+    document.querySelector('#image').addEventListener('click', (e) => {
+        console.log(e.target); // Logs the clicked target
+        console.log(e.target.tagName); // Logs the tag name of the clicked element
+        
+        // Check if the clicked element is an image
+        if (e.target.tagName === 'IMG') {
+            console.log(e.target.id); // Logs the ID of the clicked image
+            
+            // Remove the parent <li> of the clicked image
+            let removeIt = e.target.parentNode;
+            removeIt.parentNode.removeChild(removeIt);
         }
-    })
+    });
 </script>
 </html>
