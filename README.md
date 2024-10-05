@@ -80,7 +80,7 @@ These comments are intended to help you follow along and understand the logic be
 
 To get started with this repository, clone it to your local machine using the following command:
 
-git clone https://github.com/YourUsername/YourRepositoryName.git
+git clone https://github.com/BhautikVekariya21/javascript.git
 
 Contributing
 Contributions are welcome! If you'd like to contribute to this repository, please follow these steps:
