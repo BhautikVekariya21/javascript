@@ -102,5 +102,5 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 This structured and detailed `README.md` should provide a clear overview of your projects, making it easy for beginners to navigate and understand your code.
 
-js-hindi-youtube respository :- https://github.com/hiteshchoudhary/js-hindi-youtube
-and all video effort is :- https://www.youtube.com/@chaiaurcode/featured
+##js-hindi-youtube respository :- https://github.com/hiteshchoudhary/js-hindi-youtube
+##and all video effort is :- https://www.youtube.com/@chaiaurcode/featured
