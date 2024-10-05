@@ -9,7 +9,7 @@ const vrge = {
     containnow: false, // Property: a boolean value
     majorproducer: ["china", "russia", "us"], // Array of major producers
     season: "winter" // Property: typical season of growth
-};
+}; 
 
 // Accessing object properties using dot notation
 console.log(vrge.name); // Outputs: "carrot"
