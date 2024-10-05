@@ -1,90 +1,83 @@
-
 html {
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body {
-            width: 300px;
-            max-width: 750px;
-            min-width: 480px;
-            margin: 0 auto;
-            background-color: #E0FFFF;
-            display:flex;
-            text-align: center;
+    width: 300px; /* Sets a fixed width for the body */
+    max-width: 750px; /* Limits the maximum width */
+    min-width: 480px; /* Ensures a minimum width for smaller screens */
+    margin: 0 auto; /* Centers the body horizontally */
+    background-color: #E0FFFF; /* Light cyan background color */
+    display: flex; /* Enables flexbox layout */
+    text-align: center; /* Centers text */
 }
-.lastResult {
-            color: rgb(34, 188, 254);
-            padding: 7px;
-}
-.guesses {
-            color: rgb(34, 188, 254);
-            padding: 7px;
-}
-button {
-            background-color: #141414;
-            color: rgb(34, 188, 254);
-            width: 250px;
-            height: 50px;
-            border-radius: 25px;
-            font-size: 30px;
-            border-style: none;
-            margin-top: 30px;
-            /* margin-left: 50px; */
-}
-#subt {
-            background-color: #161616;
-            color:rgb(34, 188, 254);
-            width: 200px;
-            height: 50px;
-            border-radius: 10px;
-            font-size: 20px;
-            border-style: none;
-            margin-top: 50px;
-            /* margin-left: 75px; */
-}
-#guessField {
-            color:rgb(34, 188, 254);
-            width: 250px;
-            height: 50px;
-            font-size: 30px;
-            border-style: none;
-            margin-top: 25px;
 
-            /* margin-left: 50px; */
-            border: 5px solid #8aecec;
-            text-align: center;
+.lastResult, .guesses {
+    color: rgb(34, 188, 254); /* Bright blue color for result texts */
+    padding: 7px; /* Adds padding for better spacing */
+}
+
+button {
+    background-color: #141414; /* Dark background for buttons */
+    color: rgb(34, 188, 254); /* Bright blue text color */
+    width: 250px; /* Fixed width for buttons */
+    height: 50px; /* Fixed height for buttons */
+    border-radius: 25px; /* Rounded corners */
+    font-size: 30px; /* Larger font size for button text */
+    border-style: none; /* Removes default border */
+    margin-top: 30px; /* Space above the button */
+}
+
+#subt {
+    background-color: #161616; /* Slightly lighter dark background for the submit button */
+    color: rgb(34, 188, 254); /* Bright blue text color */
+    width: 200px; /* Fixed width for the submit button */
+    height: 50px; /* Fixed height for the submit button */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 20px; /* Slightly smaller font size */
+    border-style: none; /* Removes default border */
+    margin-top: 50px; /* Space above the submit button */
+}
+
+#guessField {
+    color: rgb(34, 188, 254); /* Bright blue text color */
+    width: 250px; /* Fixed width for the input field */
+    height: 50px; /* Fixed height for the input field */
+    font-size: 30px; /* Larger font size for input text */
+    border-style: none; /* Removes default border */
+    margin-top: 25px; /* Space above the input field */
+    border: 5px solid #8aecec; /* Light blue border for the input field */
+    text-align: center; /* Centers the text in the input field */
 }
 
 #guess {
-            font-size: 55px;
-            /* margin-left: 90px; */
-            margin-top: 120px;
-            color: #30e130;
+    font-size: 55px; /* Very large font size for the guess display */
+    margin-top: 120px; /* Space above the guess display */
+    color: #30e130; /* Bright green color for the guess display */
 }
 
 .guesses {
-            background-color: #e03ea0;
+    background-color: #e03ea0; /* Pink background for previous guesses */
 }
 
 #wrapper {
-            box-sizing: border-box;
-            text-align: center;
-            width: 450px;
-            height: 550px;
-            background-color: #8ae118;
-            color: #fff;
-            font-size: 25px;
+    box-sizing: border-box; /* Ensures padding and border are included in the total width/height */
+    text-align: center; /* Centers text inside the wrapper */
+    width: 450px; /* Fixed width for the wrapper */
+    height: 550px; /* Fixed height for the wrapper */
+    background-color: #8ae118; /* Light green background for the wrapper */
+    color: #fff; /* White text color */
+    font-size: 25px; /* Font size for text inside the wrapper */
 }
 
 h1 {
-            background-color: #85d5ee;
-            border: 1px dashed #000000;
-            color: #233f518d;
-            text-align: center;
+    background-color: #85d5ee; /* Light blue background for the header */
+    border: 1px dashed #000000; /* Dashed black border around the header */
+    color: #233f518d; /* Dark color for the header text */
+    text-align: center; /* Centers header text */
 }
 
 p {
-            font-size: 16px;
-            text-align: center;
+    font-size: 16px; /* Font size for paragraph text */
+    text-align: center; /* Centers paragraph text */
 }
-
