@@ -9,15 +9,18 @@ const europeanCountries = [
     "Vatican City"
 ];
 
-console.log(europeanCountries);
+console.log(europeanCountries); // Output the list of European countries
 
-for (const eu of europeanCountries) {
-    console.log(eu);
+for (const eu of europeanCountries) { // Iterate over each country in the list
+    console.log(eu); // Output each country
 }
-const heilsinki = "finland";
-for (const element of heilsinki) {
-    console.log(element);
+
+const heilsinki = "finland"; // Initialize a string variable
+for (const element of heilsinki) { // Iterate over each character in the string
+    console.log(element); // Output each character
 }
+
+// Create a Map with country codes
 const europeanCountriesMap = new Map([
     ["Albania", "AL"],
     ["Andorra", "AD"],
@@ -72,12 +75,13 @@ const europeanCountriesMap = new Map([
     ["Vatican City", "VA"]
 ]);
 
-europeanCountriesMap.forEach((code, country) => {
-    console.log(`${country}: ${code}`);
+europeanCountriesMap.forEach((code, country) => { // Iterate over the Map entries
+    console.log(`${country}: ${code}`); // Output country name and code
 });
 
-const europeCountriesMap = new Map();
+const europeCountriesMap = new Map(); // Initialize a new Map
 
+// Set countries and their codes
 europeCountriesMap.set("Albania", "AL");
 europeCountriesMap.set("Andorra", "AD");
 europeCountriesMap.set("Armenia", "AM");
@@ -130,14 +134,15 @@ europeCountriesMap.set("Ukraine", "UA");
 europeCountriesMap.set("United Kingdom", "GB");
 europeCountriesMap.set("Vatican City", "VA");
 
-europeCountriesMap.forEach((code, country) => {
-    console.log(`${country}: ${code}`);
+europeCountriesMap.forEach((code, country) => { // Iterate over the Map entries
+    console.log(`${country}: ${code}`); // Output country name and code
 });
 
-for (const [key,values] of europeCountriesMap) {
-    console.log(`${key} :- ${values}`);
+for (const [key, values] of europeCountriesMap) { // Iterate over each entry in the Map
+    console.log(`${key} :- ${values}`); // Output key-value pairs
 }
-const euCountries = {
+
+const euCountries = { // Create an object with country codes
     Albania: "AL",
     Andorra: "AD",
     Armenia: "AM",
@@ -190,7 +195,9 @@ const euCountries = {
     "United Kingdom": "GB",
     "Vatican City": "VA"
 };
-console.log(euCountries);
-for (const [key,values] of Object.entries(euCountries)) {
-    console.log(`${key} -> ${values}`);
+
+console.log(euCountries); // Output the euCountries object
+
+for (const [key, values] of Object.entries(euCountries)) { // Iterate over each entry in the euCountries object
+    console.log(`${key} -> ${values}`); // Output key-value pairs
 }
