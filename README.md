@@ -102,5 +102,11 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 This structured and detailed `README.md` should provide a clear overview of your projects, making it easy for beginners to navigate and understand your code.
 
-##js-hindi-youtube respository :- https://github.com/hiteshchoudhary/js-hindi-youtube
-##and all video effort is :- https://www.youtube.com/@chaiaurcode/featured
+Navigate into the project directory:
+cd js-hindi-youtube
+
+Usage
+You can run the JavaScript files in your preferred environment, such as a browser or Node.js. Refer to individual project directories for specific instructions.
+
+Videos
+All video tutorials related to this repository can be found on the Chai Aur Code YouTube Channel. Make sure to check it out for detailed explanations and walkthroughs of the projects.
