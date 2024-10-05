@@ -3,50 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>amino acid</title>
+    <title>Amino Acid</title>
     <style>
+        /* General page styling */
         body {
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            background-color: #E0FFFF;
-            height: 100vh;
-            margin: 0;
+            background-color: #E0FFFF; /* Light cyan background */
+            height: 100vh; /* Full viewport height */
+            margin: 0; /* Remove default margin */
             display: flex;
             justify-content: center;
-            align-items: center;
-            color: rgb(9, 21, 22);
+            align-items: center; /* Center content both vertically and horizontally */
+            color: rgb(9, 21, 22); /* Dark text color */
         }
+
+        /* Flex container for the project content */
         .project {
             display: flex;
-            flex-direction: column;
+            flex-direction: column; /* Stack children vertically */
             justify-content: center;
             align-items: center;
-            text-align: center;
+            text-align: center; /* Center text */
         }
     </style>
 </head>
 <body>
+    <!-- Main project container -->
     <div id="project" class="project">
-        <h2>Bind</h2>
-        <button id="button">click here</button>
+        <h2>Bind</h2> <!-- Title -->
+        <button id="button">Click here</button> <!-- Button for triggering the class method -->
     </div>
     
     <script>
+        // Define the Animal class
         class Animal {
             constructor() {
-                this.name = "cat";
-                this.breed = "persian cat";
+                this.name = "cat"; // Set the default name property
+                this.breed = "Persian cat"; // Set the breed property
 
+                // Attach the event listener to the button and bind the 'this' keyword
                 document.querySelector('button').addEventListener('click', this.handleclick.bind(this));
             }
+
+            // Method to handle button clicks
             handleclick() {
-                console.log('button clicked');
-                console.log(`Name: ${this.name}`);
-                console.log(`Breed: ${this.breed}`);
+                console.log('Button clicked'); // Log when the button is clicked
+                console.log(`Name: ${this.name}`); // Log the name property
+                console.log(`Breed: ${this.breed}`); // Log the breed property
             }
         }
 
-        // Initialize the Animal class
+        // Initialize the Animal class, which sets up the event listener on the button
         new Animal();
     </script>
 </body>
 </html>
+<!-- 
+Key Points:
+Flexbox for Layout: The body and .project classes use Flexbox to center the content both vertically and horizontally, making sure everything is positioned nicely in the middle of the screen.
+
+Event Binding in Class:
+
+The this.handleclick.bind(this) ensures that the this inside the handleclick method refers to the instance of the Animal class. Without .bind(this), this would refer to the button element itself when the event is triggered, leading to incorrect behavior.
+JavaScript Class:
+
+The Animal class is set up with a name and breed property. When the button is clicked, the class method handleclick is called, logging the name and breed of the animal to the console. -->
