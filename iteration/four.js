@@ -23,29 +23,26 @@ const planguage = {
     ".json": "JSON"
 };
 
-// for (const [extension, language] of Object.entries(planguage)) {
-//     console.log(`${extension}: ${language}`);
-// }
-
-for (const key in planguage) {
-        console.log(`${key} stands for ${planguage[key]}`);
-    }
-
-for (const key in planguage) {
-        console.log(key);
+// Using Object.entries to iterate through the planguage object
+for (const [extension, language] of Object.entries(planguage)) {
+    console.log(`${extension} stands for ${language}`);
 }
 
-const totaldot=[
-        ".js", ".py", ".java", ".cpp", ".cs", ".rb", ".php", 
-        ".html", ".css", ".ts", ".go", ".swift", ".rs", ".kt", 
-        ".sh", ".pl", ".r", ".sql", ".dart", ".scala", ".xml", ".json"
-]
+// Iterating over keys using Object.keys
+for (const key of Object.keys(planguage)) {
+    console.log(key); // This will print the extensions
+}
 
+const totaldot = [
+    ".js", ".py", ".java", ".cpp", ".cs", ".rb", ".php", 
+    ".html", ".css", ".ts", ".go", ".swift", ".rs", ".kt", 
+    ".sh", ".pl", ".r", ".sql", ".dart", ".scala", ".xml", ".json"
+];
 
-for (const key in totaldot) {
-    console.log(key);
-}    
-
+// Iterating over totaldot array
+for (const key of totaldot) {
+    console.log(key); // This will print the extensions
+}
 
 const europeCountriesMap = new Map();
 
@@ -101,6 +98,12 @@ europeCountriesMap.set("Ukraine", "UA");
 europeCountriesMap.set("United Kingdom", "GB");
 europeCountriesMap.set("Vatican City", "VA");
 
-for (const key in europeCountriesMap) {
-     console.log(key);
-    }
+// Iterating through the Map using forEach
+europeCountriesMap.forEach((code, country) => {
+    console.log(`${country}: ${code}`);
+});
+
+// Alternatively, using for..of loop
+for (const [country, code] of europeCountriesMap) {
+    console.log(`${country}: ${code}`);
+}
