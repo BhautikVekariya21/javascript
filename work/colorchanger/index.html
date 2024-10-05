@@ -3,200 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>helio</title>
+    <title>Color Switcher</title>
     <style>
-
+        /* General body styling */
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
+            display: flex; /* Use flexbox for centering content */
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+            height: 100vh; /* Full height of the viewport */
+            margin: 0; /* Remove default margin */
         }
 
+        /* Container for the canvas */
         .canvas {
-            text-align: center;
+            text-align: center; /* Center-align text inside the canvas */
         }
 
+        /* Button styling */
         .button {
-            display: inline-block;
-            width: 50px;
-            height: 50px;
-            margin: 5px;
-            cursor: pointer;
+            display: inline-block; /* Display buttons inline */
+            width: 50px; /* Width of each color button */
+            height: 50px; /* Height of each color button */
+            margin: 5px; /* Margin between buttons */
+            cursor: pointer; /* Change cursor to pointer on hover */
         }
 
-        #AliceBlue {
-            background-color: AliceBlue;
-            border: 2px dashed Black;
-        }
-
-        #Azure {
-            background-color: Azure;
-            border: 2px dashed Black;
-        }
-
-        #Cyan {
-            background-color: Cyan;
-            border: 2px dashed Black;
-        }
-
-        #DarkMagenta {
-            background-color: DarkMagenta;
-            border: 2px dashed Black;
-        }
-
-        #DarkSlateGrey {
-            background-color: DarkSlateGrey;
-            border: 2px dashed Black;
-        }
-
-        #DarkTurquoise {
-            background-color: DarkTurquoise;
-            border: 2px dashed Black;
-        }
-
-        #DodgerBlue {
-            background-color: DodgerBlue;
-            border: 2px dashed Black;
-        }
-
-        #GreenYellow {
-            background-color: GreenYellow;
-            border: 2px dashed Black;
-        }
-
-        #HotPink {
-            background-color: HotPink;
-            border: 2px dashed Black;
-        }
-
-        #LightSeaGreen {
-            background-color: LightSeaGreen;
-            border: 2px dashed Black;
-        }
-
-        #LightSkyBlue {
-            background-color: LightSkyBlue;
-            border: 2px dashed Black;
-        }
-
-        #Lime {
-            background-color: Lime;
-            border: 2px dashed Black;
-        }
-
-        #Wheat {
-            background-color: Wheat;
-            border: 2px dashed Black;
-        }
-
-        #Turquoise {
-            background-color: Turquoise;
-            border: 2px dashed Black;
-        }
-
-        #PowderBlue {
-            background-color: PowderBlue;
-            border: 2px dashed Black;
-        }
-
-        #Plum {
-            background-color: Plum;
-            border: 2px dashed Black;
-        }
-
-        #PaleTurquoise {
-            background-color: PaleTurquoise;
-            border: 2px dashed Black;
-        }
-
-        #PaleGoldenRod {
-            background-color: PaleGoldenRod;
-            border: 2px dashed Black;
-        }
-
-        /* Additional colors */
-        #Coral {
-            background-color: Coral;
-            border: 2px dashed Black;
-        }
-
-        #Tomato {
-            background-color: Tomato;
-            border: 2px dashed Black;
-        }
-
-        #Orchid {
-            background-color: Orchid;
-            border: 2px dashed Black;
-        }
-
-        #Salmon {
-            background-color: Salmon;
-            border: 2px dashed Black;
-        }
-
-        #SlateBlue {
-            background-color: SlateBlue;
-            border: 2px dashed Black;
-        }
-
-        #SpringGreen {
-            background-color: SpringGreen;
-            border: 2px dashed Black;
-        }
-
-        #Teal {
-            background-color: Teal;
-            border: 2px dashed Black;
-        }
-
-        #YellowGreen {
-            background-color: YellowGreen;
-            border: 2px dashed Black;
-        }
-
-        #Violet {
-            background-color: Violet;
-            border: 2px dashed Black;
-        }
-
-        #OrangeRed {
-            background-color: OrangeRed;
-            border: 2px dashed Black;
-        }
-
-        #MediumSeaGreen {
-            background-color: MediumSeaGreen;
-            border: 2px dashed Black;
-        }
-
-        #MidnightBlue {
-            background-color: MidnightBlue;
-            border: 2px dashed Black;
-        }
-
-        #RosyBrown {
-            background-color: RosyBrown;
-            border: 2px dashed Black;
-        }
-
-        #SandyBrown {
-            background-color: SandyBrown;
-            border: 2px dashed Black;
-        }
-
-        #SteelBlue {
-            background-color: SteelBlue;
-            border: 2px dashed Black;
-        }
+        /* Color buttons styling */
+        #AliceBlue { background-color: AliceBlue; border: 2px dashed Black; }
+        #Azure { background-color: Azure; border: 2px dashed Black; }
+        #Cyan { background-color: Cyan; border: 2px dashed Black; }
+        #DarkMagenta { background-color: DarkMagenta; border: 2px dashed Black; }
+        #DarkSlateGrey { background-color: DarkSlateGrey; border: 2px dashed Black; }
+        #DarkTurquoise { background-color: DarkTurquoise; border: 2px dashed Black; }
+        #DodgerBlue { background-color: DodgerBlue; border: 2px dashed Black; }
+        #GreenYellow { background-color: GreenYellow; border: 2px dashed Black; }
+        #HotPink { background-color: HotPink; border: 2px dashed Black; }
+        #LightSeaGreen { background-color: LightSeaGreen; border: 2px dashed Black; }
+        #LightSkyBlue { background-color: LightSkyBlue; border: 2px dashed Black; }
+        #Lime { background-color: Lime; border: 2px dashed Black; }
+        #Wheat { background-color: Wheat; border: 2px dashed Black; }
+        #Turquoise { background-color: Turquoise; border: 2px dashed Black; }
+        #PowderBlue { background-color: PowderBlue; border: 2px dashed Black; }
+        #Plum { background-color: Plum; border: 2px dashed Black; }
+        #PaleTurquoise { background-color: PaleTurquoise; border: 2px dashed Black; }
+        #PaleGoldenRod { background-color: PaleGoldenRod; border: 2px dashed Black; }
+        #Coral { background-color: Coral; border: 2px dashed Black; }
+        #Tomato { background-color: Tomato; border: 2px dashed Black; }
+        #Orchid { background-color: Orchid; border: 2px dashed Black; }
+        #Salmon { background-color: Salmon; border: 2px dashed Black; }
+        #SlateBlue { background-color: SlateBlue; border: 2px dashed Black; }
+        #SpringGreen { background-color: SpringGreen; border: 2px dashed Black; }
+        #Teal { background-color: Teal; border: 2px dashed Black; }
+        #YellowGreen { background-color: YellowGreen; border: 2px dashed Black; }
+        #Violet { background-color: Violet; border: 2px dashed Black; }
+        #OrangeRed { background-color: OrangeRed; border: 2px dashed Black; }
+        #MediumSeaGreen { background-color: MediumSeaGreen; border: 2px dashed Black; }
+        #MidnightBlue { background-color: MidnightBlue; border: 2px dashed Black; }
+        #RosyBrown { background-color: RosyBrown; border: 2px dashed Black; }
+        #SandyBrown { background-color: SandyBrown; border: 2px dashed Black; }
+        #SteelBlue { background-color: SteelBlue; border: 2px dashed Black; }
     </style>
 </head>
 <body>
     <div class="canvas">
-        <h1>Color switcher</h1>
+        <h1>Color Switcher</h1> <!-- Main heading for the application -->
 
+        <!-- Color buttons for user interaction -->
         <span class="button" id="AliceBlue"></span>
         <span class="button" id="Azure"></span>
         <span class="button" id="Cyan"></span>
@@ -231,10 +103,16 @@
         <span class="button" id="SandyBrown"></span>
         <span class="button" id="SteelBlue"></span>
 
+        <!-- Instructional message for users -->
         <h2>Try clicking on one of the colors above
         <span>to change the background color of this page!</span>
         </h2>
     </div>
-    <script src="code.js"></script>
+    <script src="code.js"></script> <!-- Link to the JavaScript file -->
 </body>
 </html>
+
+<!-- Summary of Comments
+Head Section: Comments explain the purpose of the title and styles.
+Body Structure: Each section of the HTML is commented to clarify its role, such as the heading, buttons, and instructional text.
+Button Styling: The inline styles for buttons have comments indicating their purpose and the general styles applied. -->
