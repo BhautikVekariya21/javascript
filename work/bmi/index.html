@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BMI Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8"> <!-- Sets the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design for mobile devices -->
+    <title>BMI Calculator</title> <!-- Title of the web page -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file for styling -->
 </head>
 <body>
-    <div class="container">Know Your BMI</div>
-    <form id="bmiForm">
+    <div class="container">Know Your BMI</div> <!-- Main title of the application -->
+    
+    <form id="bmiForm"> <!-- Form for user input -->
         <p>
-            <label for="height">Height in cm</label>
-            <input type="text" id="height" name="height">
+            <label for="height">Height in cm</label> <!-- Label for height input -->
+            <input type="text" id="height" name="height"> <!-- Input field for height -->
         </p>
         <p>
-            <label for="weight">Weight in kg</label>
-            <input type="text" id="weight" name="weight">
+            <label for="weight">Weight in kg</label> <!-- Label for weight input -->
+            <input type="text" id="weight" name="weight"> <!-- Input field for weight -->
         </p>
-        <button type="submit">Calculate</button>
-        <div class="results"></div>
+        <button type="submit">Calculate</button> <!-- Button to submit the form and calculate BMI -->
+        <div class="results"></div> <!-- Div to display the results of the BMI calculation -->
     </form>
-    <div class="weight-guide">
-        <h3>BMI Weight Guide</h3>
-        <p>Underweight = Less than 18.6</p>
-        <p>Normal Range = 18.6 to 24.9</p>
-        <p>Overweight = Greater than 24.9</p>
+
+    <div class="weight-guide"> <!-- Section providing a guide for BMI categories -->
+        <h3>BMI Weight Guide</h3> <!-- Header for the weight guide -->
+        <p>Underweight = Less than 18.6</p> <!-- Underweight category -->
+        <p>Normal Range = 18.6 to 24.9</p> <!-- Normal weight range -->
+        <p>Overweight = Greater than 24.9</p> <!-- Overweight category -->
     </div>
-    <script src="sc.js"></script>
+
+    <script src="sc.js"></script> <!-- Link to the external JavaScript file for functionality -->
 </body>
 </html>
+
+<!-- Summary of Comments
+Character Set and Viewport: Comments explain the purpose of setting the character encoding and viewport for responsive design.
+Form Elements: Each form element has a comment indicating its purpose, such as what kind of input it accepts and what each label corresponds to.
+Results and Weight Guide: Comments clarify the purpose of sections for displaying results and providing guidance on BMI categories.
+Script Linking: A comment indicates the inclusion of the JavaScript file, which adds functionality to the page. -->
