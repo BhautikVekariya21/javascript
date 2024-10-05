@@ -6,50 +6,71 @@
     <title>Lapwing</title>
 </head>
 <body style="background-color: black; color: beige; text-decoration: none;">
+    <!-- Ordered list with a starting language -->
     <ol>
-        <li class="language">JSON</li> <!-- Corrected class closing -->
+        <li class="language">JSON</li> <!-- Corrected closing of class attribute -->
     </ol>   
 </body>  
 <script>
-    // Function to add a new language to the list
+    // Function to add a new language to the list using innerHTML
     function addlanguage(jeleng) {
-        const li = document.createElement('li'); // Create an <li> element
-        li.innerHTML = `${jeleng}`; // Set the innerHTML to the passed language
-        document.querySelector('.language').parentElement.appendChild(li); // Append the li element
+        const li = document.createElement('li'); // Create a new <li> element
+        li.innerHTML = `${jeleng}`; // Set the language text via innerHTML
+        document.querySelector('.language').parentElement.appendChild(li); // Append the new <li> to the <ol>
     }
 
-    // Adding languages using the addlanguage function
+    // Add new languages using the addlanguage function
     addlanguage("Java");
     addlanguage("Python");
     addlanguage("C++");
-  
-    // Function to add a new language using text node
+
+    // Function to add a language using text node instead of innerHTML
     function balak(langname) {
-        const li = document.createElement('li'); // Create an <li> element
-        li.appendChild(document.createTextNode(langname)); // Set the text of the <li>
-        document.querySelector(".language").parentElement.appendChild(li); // Append the <li> to the list
+        const li = document.createElement('li'); // Create a new <li> element
+        li.appendChild(document.createTextNode(langname)); // Add text node as the language name
+        document.querySelector(".language").parentElement.appendChild(li); // Append the new <li> to the <ol>
     }
 
-    // Adding more languages using the balak function
+    // Add more languages using the balak function
     balak("JS");
     balak("SQL");
     balak("D");
 
-    // Selecting the fourth language
+    // Selecting the fourth language in the list (1-based index)
     const forthlanguage = document.querySelector('li:nth-child(4)');
-    console.log(forthlanguage); 
+    console.log(forthlanguage); // Logs the fourth language <li> element
 
-    // Replacing the fourth language with "A#"
-    const newsli = document.createElement('li');
-    newsli.textContent = "A#"; // Set the new text content
-    forthlanguage.replaceWith(newsli); // Replace the old <li> with the new one
+    // Replace the fourth language with "A#"
+    const newsli = document.createElement('li'); // Create a new <li> element
+    newsli.textContent = "A#"; // Set the new text content to "A#"
+    forthlanguage.replaceWith(newsli); // Replace the original fourth item
 
-    // Changing the first language to "Ballerina"
+    // Change the first language (originally "JSON") to "Ballerina"
     const firstlanguage = document.querySelector('li:first-child');
-    firstlanguage.outerHTML = '<li>Ballerina</li>';
+    firstlanguage.outerHTML = '<li>Ballerina</li>'; // Replace the first <li> entirely with new HTML
 
-    // Removing the last language
-    const lastlanguage = document.querySelector('li:last-child');
-    lastlanguage.remove();
+    // Remove the last language from the list
+    const lastlanguage = document.querySelector('li:last-child'); // Select the last <li>
+    lastlanguage.remove(); // Remove the last item from the list
 </script>
 </html>
+
+<!-- Breakdown of the Code:
+HTML Structure:
+There is a list (<ol>) with one item (JSON), which is styled using inline CSS on the body element.
+JavaScript:
+Two functions are created: one (addlanguage) for adding new languages to the list using innerHTML, and the other (balak) adds new list items using a text node.
+Additional code is provided to modify the list, such as replacing, modifying, and removing items dynamically. -->
+<!-- 
+Improvements:
+Added comments to explain each part of the script, making it easier to understand for others or yourself when you come back to it later.
+
+Replaced the fourth language with "A#":
+
+You correctly used replaceWith to change the fourth language item dynamically.
+Changed the first language:
+
+You used outerHTML to replace the entire element, which is efficient when you want to completely replace an item.
+Removed the last language:
+
+You correctly selected the last item using querySelector('li:last-child') and removed it from the DOM using .remove(). -->
