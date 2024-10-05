@@ -1,33 +1,39 @@
-*{
+/* Reset margin and padding for all elements */
+* {
     margin: 0px;
     padding: 0px;
 }
 
+/* Body styles */
 body {
-    background-color: #a0d2eb;
-    color: black;
-    margin: 0;
+    background-color: #a0d2eb; /* Light blue background color */
+    color: black; /* Text color set to black */
+    margin: 0; /* Remove default margin */
 }
 
+/* Container styles for flexbox layout */
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100%;
-    padding: 20px;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange child elements in a column */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width of the viewport */
+    padding: 20px; /* Padding around the container */
 }
 
+/* Banner styles */
 .banner {
-    font-size: 24px;
-    padding-bottom: 20px; 
+    font-size: 24px; /* Font size for the banner text */
+    padding-bottom: 20px; /* Space below the banner */
 }
+
+/* Clock display styles */
 #clock {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 47px;
-    padding: 21px 51px;
-    border-radius: 11px;
-    background: #e5eaf5;
-    margin-top: 20px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Font family for the clock */
+    font-size: 47px; /* Font size for the time */
+    padding: 21px 51px; /* Padding around the clock display */
+    border-radius: 11px; /* Rounded corners for the clock display */
+    background: #e5eaf5; /* Light background color for the clock */
+    margin-top: 20px; /* Space above the clock */
 }
