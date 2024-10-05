@@ -25,29 +25,44 @@
             font-size: 16px;
             background-color: #FFF0F5;
             border: 2px dashed black;
+            cursor: pointer; /* Change cursor on hover */
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+
+        button:hover {
+            background-color: #FFB6C1; /* Light pink on hover */
+        }
+
+        #message {
+            margin-top: 20px; /* Spacing for message */
+            font-size: 18px; /* Larger font size for message */
         }
     </style>
 </head>
 <body>
     <h1>Welcome, Cutie!</h1>
     <button id="stop">cutie</button>
+    <div id="message"></div> <!-- Area to display messages -->
 
     <script>
         const cutie = () => {
             console.log('hello cutie');
+            document.getElementById('message').innerText = 'You clicked the button!'; // Display message on the page
         }
+
         const button = document.getElementById('stop');
         button.addEventListener('click', cutie);
 
-        const changetxt = ()=>{
-            document.querySelector('h1').innerHTML='good moening cutie';
+        const changetxt = () => {
+            document.querySelector('h1').innerHTML = 'Good morning cutie';
         }
-        const changnme = setTimeout(changetxt,4000);
+
+        const changnme = setTimeout(changetxt, 4000);
         
-        document.querySelector('#stop').addEventListener('click',(e)=>{
+        button.addEventListener('click', (e) => {
             clearTimeout(changnme);
-            console.log('cutie,you clicked stopeed');
-        })
+            console.log('cutie, you clicked and stopped the timeout');
+        });
     </script>
 </body>
 </html>
