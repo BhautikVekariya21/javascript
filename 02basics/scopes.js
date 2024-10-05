@@ -1,37 +1,49 @@
 let asw = 577;
-if(true){
-    // let asw = 212;
-    let qwe = 89;
-    console.log(asw);
+
+if (true) {
+    // let asw = 212; // This would create a new block-scoped 'asw' variable if uncommented
+    let qwe = 89; // Block-scoped variable, only accessible inside this block
+    console.log(asw); // Output: 577 (refers to the outer 'asw' because the inner 'asw' is commented out)
 }
-console.log(asw);
-// console.log(qwe);
 
-function outer (){
-    const name="vishakha"
-    function inner(){
-        const namee="vishakhapattanam"
-        console.log(namee)
-        console.log(name)
-        console.log(namee + name)
+console.log(asw); // Output: 577 (refers to the 'asw' declared in the outer scope)
+// console.log(qwe); // This will throw a ReferenceError because 'qwe' is block-scoped and not accessible outside the 'if' block
 
+
+// Function declaration with nested inner function (closure)
+function outer() {
+    const name = "vishakha"; // 'name' is scoped to the 'outer' function
+
+    function inner() {
+        const namee = "vishakhapattanam"; // 'namee' is scoped to the 'inner' function
+        console.log(namee); // Output: "vishakhapattanam"
+        console.log(name); // Output: "vishakha" (accessing the 'name' from the outer function's scope)
+        console.log(namee + name); // Output: "vishakhapattanamvishakha"
     }
-    inner()
-    // console.log(namee)
-    console.log(name)
-}
-outer();
 
-console.log(finland("heilsinki"));
-
-
-function finland(city){
-    return city
+    inner(); // Calling the 'inner' function
+    // console.log(namee); // This will throw a ReferenceError because 'namee' is scoped to the 'inner' function
+    console.log(name); // Output: "vishakha"
 }
 
-console.log(country);
+outer(); // Calls the 'outer' function
 
-const country =function norway(city){
-    return city
+
+// Function declaration, so it can be called before it's defined (hoisting)
+console.log(finland("heilsinki")); // Output: "heilsinki"
+
+function finland(city) {
+    return city; // Returns the city name
 }
-console.log(norway("oslo"));
+
+
+// Trying to log 'country' before it's declared (hoisting doesn't work with function expressions)
+console.log(country); // Output: undefined (because 'country' is declared as a 'const' but not initialized)
+
+// Function expression, not hoisted
+const country = function norway(city) {
+    return city;
+};
+
+// Trying to call 'norway' directly will throw an error because 'norway' is a named function expression and is only accessible inside 'country'
+console.log(norway("oslo")); // This will throw a ReferenceError because 'norway' is not accessible in the global scope
