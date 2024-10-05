@@ -26,11 +26,21 @@
         }
 
         button {
-          padding: 10px 20px;
+            padding: 10px 20px;
             font-size: 16px;
             background-color: #FFF0F5;
             border: 2px dashed black;
             cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #FFB6C1; /* Light pink on hover */
+        }
+
+        #output {
+            margin-top: 20px; /* Spacing for output */
+            font-size: 18px; /* Larger font size for output */
         }
     </style>
 </head>
@@ -40,14 +50,19 @@
         <button class="start">Start</button>
         <button class="stop">Stop</button>    
     </div>
+    <div id="output"></div> <!-- Output area for date and time -->
 
     <script>
+        const output = document.getElementById('output'); // Get output area
+
         const startdate = () => {
-            console.log(new Date().toLocaleString());
+            const currentDate = new Date().toLocaleString();
+            output.innerText = `Started at: ${currentDate}`; // Display date and time on the page
         }
 
         const stopdate = () => {
             console.log("Stopped");
+            output.innerText = ''; // Clear the output area
         }
 
         document.querySelector('.start').addEventListener('click', startdate);
