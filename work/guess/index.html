@@ -3,30 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>guess</title>
-    <link rel="stylesheet" href="guess.css">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="guess.css"> <!-- Link to the CSS file for styling -->
 </head>
 <body>
-    <div class="wrapper">
-        <h1>Number guessing game</h1>
+    <div class="wrapper"> <!-- Wrapper for the content -->
+        <h1>Number Guessing Game</h1>
         <p>Try and guess a random number between 1 and 100.</p>
         <p>You have 10 attempts to guess the right number.</p>
-    <br>
-    <form class="form">
-        <label2 class="gaussfield" id="'guess" >Gauss a number</label2>
-        <input type="text" class="gaussfield" id="gaussfield">
-        <input type="submit" id="sbt" value="submitguess" class="gausssubmit">
-    </form>
-    <div class="resultparas">
-        <p>previus gausses
-            <span class="gausses"></span>
-        </p>
-        <p>gausses remaining
-            <span class="lastresult">10</span>
-        </p>
-        <p class="loworhi"></p>
+        <br>
+        <form class="form"> <!-- Form for user input -->
+            <label for="gaussfield" class="gaussfield">Guess a number:</label> <!-- Corrected label syntax -->
+            <input type="text" class="gaussfield" id="gaussfield" placeholder="Enter your guess"> <!-- Input field for user guesses -->
+            <input type="submit" id="sbt" value="Submit Guess" class="gausssubmit"> <!-- Submit button for the form -->
+        </form>
+        <div class="resultparas"> <!-- Container for result display -->
+            <p>Previous guesses: <span class="gausses"></span></p> <!-- Display previous guesses -->
+            <p>Guesses remaining: <span class="lastresult">10</span></p> <!-- Display remaining guesses -->
+            <p class="loworhi"></p> <!-- Message indicating if the guess is too high or too low -->
+        </div>
     </div>
-    </div>
+    <script src="guess.js"></script> <!-- Link to the JavaScript file for game logic -->
 </body>
-<script src="guess.js"></script>
 </html>
+
+
+<!-- Number Guessing Game
+This project is a simple number guessing game where users try to guess a randomly generated number between 1 and 100.
+
+HTML Structure:
+
+The HTML file consists of a title, instructions, and a form where the user can input their guess.
+The form includes:
+An input field for entering the guessed number.
+A submit button to submit the guess.
+There are sections to display previous guesses, the number of guesses remaining, and feedback on whether the guess was too high or too low.
+Key Elements:
+
+Header and Instructions: Inform users about the game and how to play.
+Input Form: Allows users to input their guess and submit it.
+Result Display: Shows previous guesses and how many attempts remain.
+Styling:
+
+The game is styled using an external CSS file (guess.css) linked in the head section of the HTML.
+Usage:
+
+Open the HTML file in a web browser.
+Enter a number between 1 and 100 in the input field and click "Submit Guess."
+The game will keep track of your previous guesses and the number of attempts left.
+This project demonstrates basic HTML structure and form handling, making it a good exercise for beginners in web development.
+
+ -->
