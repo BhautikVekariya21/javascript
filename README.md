@@ -7,13 +7,13 @@ Welcome to my JavaScript Projects repository! This collection showcases various 
 - [Project Overview](#project-overview)
 - [Folder Structure](#folder-structure)
 - [Detailed Project Descriptions](#detailed-project-descriptions)
-  - [Basics](#basics)
-  - [Control Flow](#control-flow)
-  - [Arrays](#arrays)
-  - [DOM Manipulation](#dom-manipulation)
-  - [Events](#events)
-  - [Iteration](#iteration)
-  - [Object-Oriented Programming](#object-oriented-programming)
+- [Basics](#basics)
+- [Control Flow](#control-flow)
+- [Arrays](#arrays)
+- [DOM Manipulation](#dom-manipulation)
+- [Events](#events)
+- [Iteration](#iteration)
+- [Object-Oriented Programming](#object-oriented-programming)
 - [Code Comments](#code-comments)
 - [Getting Started](#getting-started)
 - [Contributing](#contributing)
@@ -90,9 +90,16 @@ Create a new branch (git checkout -b feature/YourFeature).
 Make your changes and commit them (git commit -m 'Add some feature').
 Push to the branch (git push origin feature/YourFeature).
 Open a pull request.
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
 
+## Credits
+
+All video tutorials and guidance for this backend project are based on the excellent **Chai Aur Code** YouTube channel.
+
+You can check out the backend playlist here:
+
+[Chai Aur Code - JavaScript Playlist](https://www.youtube.com/@chaiaurcode)
+
+Special thanks to the creator of the channel for providing valuable content to learn backend development!
 
 ### Instructions:
 
@@ -101,12 +108,3 @@ This project is licensed under the MIT License. See the LICENSE file for details
 3. **Add More Details**: If there are additional features or explanations that you feel would benefit the user, add them where appropriate.
 
 This structured and detailed `README.md` should provide a clear overview of your projects, making it easy for beginners to navigate and understand your code.
-
-Navigate into the project directory:
-cd js-hindi-youtube
-
-Usage
-You can run the JavaScript files in your preferred environment, such as a browser or Node.js. Refer to individual project directories for specific instructions.
-
-Videos
-All video tutorials related to this repository can be found on the Chai Aur Code YouTube Channel. Make sure to check it out for detailed explanations and walkthroughs of the projects.
