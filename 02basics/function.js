@@ -1,4 +1,4 @@
-// A function with a greeting message (currently commented out)
+// A function with a greeting message 
 function greet() {
     // console.log("good morning to the cutiepie" + " looking very nice");
 }
