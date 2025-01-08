@@ -2,7 +2,7 @@
 
 let name = "gemini";       // A string value
 let age = 23;              // A number
-let isLoggedIn = false;     // A boolean value
+let isLoggedIn = false;    // A boolean value
 let state;                 // Variable declared but not initialized (so it's undefined)
 
 console.log(typeof name);         // "string": `name` holds a string value "gemini"
